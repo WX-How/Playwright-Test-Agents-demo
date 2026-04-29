@@ -21,10 +21,10 @@ test.describe('缘来荟商城 - 商品搜索模块测试', () => {
     const searchInput = iframe.locator('input[placeholder="请输入商品名称或商品编码搜索"]').first();
     await searchInput.waitFor({ state: 'visible', timeout: 10000 });
     await searchInput.click();
-    await searchInput.fill('测试商品');
+    await searchInput.fill('自动化测试商品');
     await searchInput.press('Enter');
 
-    await expect(searchInput).toHaveValue('测试商品');
+    await expect(searchInput).toHaveValue('自动化测试商品');
     await page.waitForTimeout(2000);
 
     const productList = iframe.locator('.goods-list, .product-list, .search-results').first();
@@ -80,7 +80,7 @@ test.describe('缘来荟商城 - 商品搜索模块测试', () => {
     const searchInput = iframe.locator('input[placeholder="请输入商品名称或商品编码搜索"], input[placeholder="输入关键字搜索"]').first();
     await searchInput.waitFor({ state: 'visible', timeout: 10000 });
     await searchInput.click();
-    await searchInput.fill('测试商品');
+    await searchInput.fill('自动化测试商品');
     await searchInput.press('Enter');
 
     await page.waitForTimeout(3000);
@@ -169,7 +169,7 @@ test.describe('缘来荟商城 - 商品搜索模块测试', () => {
     const searchInput = iframe.locator('input[placeholder="请输入商品名称或商品编码搜索"], input[placeholder="输入关键字搜索"]').first();
     await searchInput.waitFor({ state: 'visible', timeout: 10000 });
     await searchInput.click();
-    await searchInput.fill('测试商品');
+    await searchInput.fill('自动化测试商品');
     await searchInput.press('Enter');
 
     await page.waitForTimeout(3000);
