@@ -13,6 +13,8 @@
 2. **执行规划**
    - 确定测试优先级和执行顺序
    - 识别需要的数据种子和 fixtures
+   - 执行命令为：
+     - npx playwright test --grep "场景" --project=chromium --reporter=list,html,json
    - 输出报告
 3. **协调输出**
    - 将测试执行结果输出到playwright-report、test-results

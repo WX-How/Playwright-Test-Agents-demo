@@ -1,4 +1,4 @@
-﻿import { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import {
   TEST_CONFIG,
   getIframe,
@@ -9,7 +9,7 @@ import {
 } from '../fixtures';
 
 /**
- * 缘来荟商城 - 登录模块 Playwright 测试脚本
+ * YLH商城 - 登录模块 Playwright 测试脚本
  * 测试 URL: https://ecs.yto56test.com:4443/mall/#/login?type=1010
  * 测试账号: 03137521 / 密码: 123qwe
  */

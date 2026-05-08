@@ -1,10 +1,10 @@
-﻿import { test, expect, loginAsNormalUser, getIframe } from '../fixtures';
+import { test, expect, loginAsNormalUser, getIframe } from '../fixtures';
 
 /**
- * 缘来荟商城 - 商品搜索模块测试
+ * YLH商城 - 商品搜索模块测试
  * 场景ID: SC-SEARCH-001 ~ SC-SEARCH-008
  */
-test.describe('缘来荟商城 - 商品搜索模块测试', () => {
+test.describe('YLH商城 - 商品搜索模块测试', () => {
 
   test.beforeEach(async ({ page }) => {
     await loginAsNormalUser(page);

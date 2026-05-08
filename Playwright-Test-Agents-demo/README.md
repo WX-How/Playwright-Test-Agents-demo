@@ -20,18 +20,17 @@ Playwright Test Agents 框架 - AI 驱动的端到端测试项目。
 │   ├── healer.md             # Healer Agent（失败诊断→修复）
 │   └── executor.md             # Executor Agent（测试执行→测试报告）
 │
-├── specs/缘来荟/             # 测试规格（需求来源）
+├── specs/YLH/             # 测试规格（需求来源）
 │   ├── user-auth/login-yuanlai.md
 │   ├── goods_search/goods-search.md
 │   ├── shopping/
 │   └── admin/
 │
 ├── tests/                    # 测试代码
-│   ├── fixtures.ts           # 根级 fixtures（通用辅助）
 │   ├── seed.spec.ts          # 数据种子
 │   ├── utils/page-utils.ts
-│   ├── 缘来荟/               # 按产品隔离
-│   │   ├── fixtures.ts       # 缘来荟专用 fixtures（与根级大量重复）
+│   ├── YLH/               # 按产品隔离
+│   │   ├── fixtures.ts       # YLH 专用 fixtures（与根级大量重复）
 │   │   ├── goods_search/goods-search.spec.ts
 │   │   ├── user-auth/login-yuanlaihui.spec.ts
 │   │   ├── shopping/
