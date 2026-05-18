@@ -134,15 +134,18 @@ export async function searchProduct(
   iframe: FrameLocator,
   keyword: string = '自动化测试商品'
 ): Promise<void> {
-  await page.waitForTimeout(1000);
+  await page.waitForTimeout(1500);
   const searchInput = iframe.locator(
     'input[placeholder="请输入商品名称或商品编码搜索"], input[placeholder="输入关键字搜索"]'
   ).first();
   await searchInput.waitFor({ state: 'visible', timeout: 10000 });
   await searchInput.click();
-  await searchInput.fill(keyword);
+  await searchInput.clear();
+  // Use pressSequentially to trigger input events properly
+  await searchInput.pressSequentially(keyword, { delay: 100 });
   await searchInput.press('Enter');
-  await page.waitForTimeout(2000);
+  // Wait for search results to load
+  await page.waitForTimeout(3000);
 }
 
 /**
